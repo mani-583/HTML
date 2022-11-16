@@ -1,0 +1,78 @@
+<html>
+<head>
+<b><title>Student Registration Form</title></b>
+</head>
+<body bgcolor="orange">
+<center>
+<h1>Student Registration Form</h1>
+</center>
+<form>
+<label>FirstName </label>
+<input type="text" name="firstname" size="20"/><br><br>
+<label>MiddleName</label>
+<input type="text" name="middlename" size="20"/><br><br>
+<label>LastName </label>
+<input type="text" name="lastname" size="20"/><br><br>
+<label>Course :
+</label>
+<select> 
+<option value="Course">Course</option>
+<option value="B.Tech">B.Tech</option>
+<option value="M.Tech">M.Tech</option>
+</select>
+<br>
+<br>
+<label>Branch :
+</label>
+<select>
+<option value="CSE">CSE</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+<option value="MECH">MECH</option>
+<option value="CIVIL">CIVIL</option>
+<option value="CST">CST</option>
+<option value="CSBS">CSBS</option>
+<option value="MTech in IT">MTech in IT</option>
+<option value="MTech in CS">MTech in CS</option>
+</select>
+<br>
+<br>
+<label>
+Gender:
+</label>
+<br>
+<form action="/action_page.php">
+<input type="radio" id="male" name="Gender" value="Male">
+<label for="male">Male</label><br>
+<input type="radio" id="female" name="Gender" value="Female">
+<label for="female">Female</label><br>
+<input type="radio" id="Other" name="Gender" value="Other">
+<label for="other">Other</label><br>
+<br>
+</form>
+<label>
+Phone Number:
+</label>
+<input type="text" name="country code" value="+91" size="2"/>
+<input type="text" name="phone" size="10"/><br>
+<br>
+Address:
+<br>
+<textarea cols="80" rows="5" value="address">
+</textarea>
+<br>
+<br>
+Email:
+<input type="email" id="email" name="email"/><br>
+<br>
+Password:
+<input type="Password" id="pass" name="pass"/><br>
+<br>
+Re-Type Password:
+<input type="Password" id="retype" name="retype"/><br><br>
+<center>
+<input type=button onClick="parent.location='file:///C:/Users/PGLAB002/Downloads/209X1A0568/LInk.html'" value="submit">
+</center>
+</form>
+</body>
+</html>
