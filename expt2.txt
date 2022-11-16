@@ -1,0 +1,85 @@
+<html>
+<head>
+	<style>
+		table,th,td{
+			border: 2px solid black;
+			border-collapse:collapse;
+		}
+	</style>
+<title>CV</title>
+</head>
+<body style="background-color: white">
+	<img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_640.png" align=right width="100px" height="100px">
+	<h1><u>SURE MEGHANA</u></h1>
+	<address style="color:red">209x1a05e1@gprec.ac.in</address>
+	<b>Mobile: 7671042295</b>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>CAREER OBJECITVE</u></h2>
+	<p>To secure a challenging position in a reputable organization to expand my learning knowledge and skill.</p>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Educational qualifications</u></h2>
+	<center>
+	<table border ="2" cellspacing="2" cellpadding="2">
+	<tr>
+	<th>Qualification</th>
+	<th>Educational institution</th>
+	<th>Duration of course</th>
+	<th>Academic years</th>
+	<th>Percetnage/CGPA</th>
+	</tr>
+	<tr>
+		<td>B.Tech</td>
+		<td>G. Pulla Reddy Engineering College</td>
+		<td>4 years</td>
+		<td>2020-2024</td>
+		<td>9.32</td>
+	</tr>
+	<tr>
+		<td>Intermediate</td>
+		<td>Nucleus Junior College</td>
+		<td>2 years</td>
+		<td>2018-2020</td>
+		<td>9.88</td>
+	</tr>
+	<tr>
+		<td>SSC</td>
+		<td>The Gelivi's Venkateswara Vidyalaya</td>
+		<td>1 year</td>
+		<td>2017-2018</td>
+		<td>10.00</td>
+	</tr>
+	</table>
+	</center>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Achievements</u></h2>
+	<li>Got selected for the wipro future skills program.</li>
+	<li>Completed Internship under AICTE EDUSKILLS in Fundamentals of cybersecurity</li>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Technical skills</u></h2>
+	<li>C</li>
+	<li>Java</li>
+	<li>SQL</li>
+	<li>html</li>
+	<li>Python</li>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Additional skills</u></h2>
+	<li>Communications skills</li>
+	<li>Interactive</li>
+	<li>Team work</li>
+	<li>Interpersonal skills</li>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Personal Information</u></h2>
+		<li>Name : S.Meghana</li>
+		<li>DOB: 25 June, 2003</li>
+		<li>Mobile: 5780456778</li>
+		<li>Address : Nandyal</li>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<h2 style="color:blue"><u>Reference</u></h2>
+	<p>References will be furnished when required.</p>
+	<hr style="background: black; width: 2300px; height: 5px;">
+	<center><h2 style="color:blue"><u>DECLARATION</u></h2></center>
+	<p><center>I hereby declare that the above-mentioned information is true to the best of my knowledge. In case of any discrepancies, I will be held responsible</center></p>
+	<p>Date: </p>
+	<p>Place: </p>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<html>
+<header>
+<style>
+table ,th,td{
+     border-collapse: collapse;
+border: 2px solid blue;
+text-align: center;
+
+}
+</style>
+</header>
+<body style="background: lavender;">
+	<h1><center><p> G. PULLA REDDY ENGINEERING COLLEGE </p></center></h1>
+	<h3><center><p> STUDENT DETAILS </p></center></h3>
+	<center><table>
+		<table border="1">
+			<tr >
+				<th> S.NO </th>
+				<th> ROLL NUMBER </th>
+				<th> NAME </th>
+				<th> BRANCH </th>
+				<th> SECTION </th>
+				<th> CGPA </th>
+			</tr>
+			<tr>
+				<th> 1 </th>
+				<th> S101 </th>
+				<th>Joshna</th>
+				<th> CSE </th>
+				<th> C </th>
+				<th> 9.46 </th>
+			</tr>
+			<tr>
+				<th> 2 </th>
+				<th> S102 </th>
+				<th> Meghana</th>
+				<th> ECE </th>
+				<th> C </th>
+				<th> 9.12 </th>
+			</tr>
+			<tr>
+				<th> 3 </th>
+				<th> S103 </th>
+				<th>sashank</th>
+				<th> MECH </th>
+				<th> B </th>
+				<th> 9.52 </th>
+			</tr>
+			<tr>
+				<th> 4 </th>
+				<th> S104 </th>
+				<th>Anvika</th>
+				<th> CE </th>
+				<th> A </th>
+				<th> 9.02 </th>
+			</tr>
+			<tr>
+				<th> 5 </th>
+				<th> S105 </th>
+				<th>Shritha</th>
+				<th> EEE </th>
+				<th> B </th>
+				<th> 9.14 </th>
+			</tr>
+	</center></table>
+</html>
