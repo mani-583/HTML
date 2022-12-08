@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>Home</title> 
+<style> 
+body{ 
+background-image: url("https://c4.wallpaperflare.com/wallpaper/701/676/931/abstract-background-colors-texture-wallpaper-preview.jpg"); 
+background-repeat: no-repeat; 
+background-attachment: fixed; 
+background-size: 100% 100%; 
+} 
+.topnav 
+{ 
+overflow: hidden; 
+} 
+.topnav a { 
+float: right; 
+color: #0e0d0d; 
+text-align: center; 
+padding: 20px 20px; 
+text-decoration: none; 
+font-family:georgia,garamond,serif; 
+font-size: 20px; 
+font-style:Open Sans; 
+} 
+.topnav a:hover { 
+color: rgb(233, 122, 122); 
+} 
+.topnav a.active { 
+background-color: #04AA6D; 
+color: white; 
+} 
+</style> 
+</head> 
+<body style="background-color:Aquamarine;"> 
+<center><h1 style="color:aqua;"><i>G Pulla Reddy Engineering College</i></h1></center> 
+<div class="topnav"> 
+<a <h1 style="color:white;" href="https://www.gprec.ac.in/contact/" target="_blank">Contact Us</h1></a> 
+<a <h3 style="color:white;" href="department.html" target="_blank">Departments</h3></a> 
+
+<a <h3 style="color:white;" href="Tutorials.html "target="_blank">Tutorial</h3></a> 
+
+<a <h3 style="color:white;" href="https://www.gprec.ac.in/admissions/" target="_blank">Admissions</h3></a> 
+<a <h3 style="color:white;" href="https://www.gprec.ac.in/about-us/" target="_blank">About Us</h3></a> 
+</div> 
+<br> 
+<center><iframe frameborder="2s" scrolling="no" marginheight="150" marginwidth="150"width="788.54" height="443" type="text/html" src="https://www.youtube.com/embed/NYneXJyQ4Do?autoplay=0&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com"></iframe></center> 
+
+</div> 
+</body></html>
