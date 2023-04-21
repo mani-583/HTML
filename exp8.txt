@@ -1,0 +1,149 @@
+------------------------------------------ACTIVITY MAIN.XMl---------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select your Subject ?"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:layout_marginTop="50dp"
+        android:id="@+id/groupradio"
+        android:layout_marginLeft="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radio_id1"
+            android:text="DBMS"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id2"
+            android:text="C/C++ Programming"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id3"
+            android:text="Data Structures"
+            android:textSize="20sp"/>
+        <RadioButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radia_id4"
+            android:text="Algorithms"
+            android:textSize="20sp"/>
+    </RadioGroup>
+    <!-- add button For Submit the Selected item-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="180dp"
+        />
+    <!-- add clear button for clear the selected item-->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        android:id="@+id/clear"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        />
+</RelativeLayout>
+
+
+---------------------------------------MAINACTIVITY.JAVA------------------------------------------------
+
+
+package com.example.exp8;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    private RadioGroup radioGroup;
+    Button submit, clear;
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        submit = (Button)findViewById(R.id.submit);
+        clear = (Button)findViewById(R.id.clear);
+        radioGroup = (RadioGroup)findViewById(R.id.groupradio);
+        radioGroup.clearCheck();
+        radioGroup.setOnCheckedChangeListener(
+                new RadioGroup
+                        .OnCheckedChangeListener() {
+                    @Override
+                    public void onCheckedChanged(RadioGroup group,
+                                                 int checkedId)
+                    {
+
+                        RadioButton
+                                radioButton
+                                = (RadioButton)group
+                                .findViewById(checkedId);
+                    }
+                });
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                int selectedId = radioGroup.getCheckedRadioButtonId();
+                if (selectedId == -1) {
+                    Toast.makeText(MainActivity.this,
+                                    "No answer has been selected",
+                                    Toast.LENGTH_SHORT)
+                            .show();
+                }
+                else{
+
+                    RadioButton radioButton
+                            = (RadioButton)radioGroup
+                            .findViewById(selectedId);
+                    Toast.makeText(MainActivity.this,
+                                    radioButton.getText(),
+                                    Toast.LENGTH_SHORT)
+                            .show();
+                }
+            }
+        });
+        clear.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v)
+            {
+                radioGroup.clearCheck();
+            }
+        });
+    }
+}
