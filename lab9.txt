@@ -1,0 +1,118 @@
+------------------------------ACTIVITY.xml--------------------------------------
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESTAURENT MENU"
+        android:textStyle="bold"
+        android:textColor="@color/teal_700"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+app -> res -> drawable(rightclick-> new -> vector ->vector asset(symbol,ic_icon as name))
+res->rightclick->new ->android resource directory->name(as menu)
+menu->rughtclick->menu resource file
+
+
+
+--------------------------------------example_menu.xml------------------------------------------------------------
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/item1"
+        android:icon="@drawable/ic_icon"
+        android:title="Item 1"
+        app:showAsAction ="ifRoom"/>
+    <item
+        android:id="@+id/item2"
+        android:title="Item 2"
+        app:showAsAction ="never"/>
+    <item
+        android:id="@+id/item3"
+        android:title="Item 3"
+        app:showAsAction="ifRoom">
+    <menu>
+        <item android:id="@+id/subitem1"
+            android:title="SUBITEM 1"/>
+
+        <item android:id="@+id/subitem2"
+            android:title="SUBITEM 2"/>
+
+    </menu>
+    </item>
+
+
+</menu>
+
+
+-------------------------------------------------MAINACTIVITY.JAVA-----------------------------------------------
+package com.example.myapplication9;
+
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Switch;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.example_menu,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.item1:
+                Toast.makeText(this,"item1 selected",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.item2:
+                Toast.makeText(this,"item2 selected",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.subitem1:
+                Toast.makeText(this,"sub item1 selected",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.subitem2:
+                Toast.makeText(this,"sub item2 selected",Toast.LENGTH_SHORT).show();
+                return true;
+            case R.id.item3:
+                Toast.makeText(this,"item3 selected",Toast.LENGTH_SHORT).show();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+
+    }
+}
